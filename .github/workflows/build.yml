@@ -45,7 +45,7 @@ jobs:
           cd ./pyinstaller/bootloader
           python ./waf distclean all
           cd ../
-          python setup.py install
+          pip install .
           cd ../
 
       - name: install requirements
