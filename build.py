@@ -1,12 +1,12 @@
 import platform
 import sys
 
-import pyinstaller.__main__
+import PyInstaller.__main__
 
 OS = platform.system()
 
 if OS == 'Windows':
-    pyinstaller.__main__.run([
+    PyInstaller.__main__.run([
         'twitchTransFN.py',
         '--clean',
         '--onefile',
@@ -17,7 +17,7 @@ if OS == 'Windows':
         '--name=twitchTransFN.exe'
     ])
 elif OS == 'Darwin':
-    pyinstaller.__main__.run([
+    PyInstaller.__main__.run([
         'twitchTransFN.py',
         '--clean',
         '--onefile',
@@ -27,7 +27,7 @@ elif OS == 'Darwin':
         '--name=twitchTransFN.command'
     ])
 elif OS == 'Linux':
-    pyinstaller.__main__.run([
+    PyInstaller.__main__.run([
         'twitchTransFN.py',
         '--clean',
         '--onefile',
